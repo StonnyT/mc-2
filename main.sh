@@ -1,5 +1,7 @@
 #!/bin/bash
 echo starting...
 cd bungee
-envsubst < config.yml > temp.yml && mv temp.yml config.yml
+
+sed -i 's/${SERVER}/'"$SERVER"'/g' config.yml
+
 java -Xmx1024M -Xms1024M -jar bungee.jar
