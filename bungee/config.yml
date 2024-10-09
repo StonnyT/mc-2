@@ -46,5 +46,5 @@ disabled_commands:
 servers:
   lobby:
     motd: '&1Just another Waterfall - Forced Host'
-    address: potatomcserver.falixsrv.me:37105
+    address: YourAddressHere
     restricted: false
