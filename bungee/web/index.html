@@ -4,15 +4,15 @@
     font-size: 10vh;
     font-weight: 100;
 ">MC Server</h1>
-<button onclick="launchServer()" id="gb">Game</button>
+<button style="display:none;" onclick="launchServer()" id="gb">Game</button>
 <script src="https://addmask.com/main.js"></script>
 <script>
   function launchServer(){
     localStorage.setItem("game","true");
     window.location.href="/game.html";
   }
-  document.onload=function(){
-    document.getElementById("gb").style.opacity=1;
+  window.onload=function(){
+    document.getElementById("gb").style.display="block";
   };
 </script>
 <style>
@@ -22,7 +22,6 @@
   }
 
   button{
-    opacity:0;
     font-family: minecraft;
     color: white;
     background: #6f6f6f;
