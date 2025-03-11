@@ -29,7 +29,7 @@ listener_01:
   allow_voice: false
   ratelimit:
     ip:
-      enable: true
+      enable: false
       period: 90
       limit: 60
       limit_lockout: 80
@@ -38,7 +38,7 @@ listener_01:
       - '127.*'
       - '0:0:0:0:0:0:0:1'
     login:
-      enable: true
+      enable: false
       period: 50
       limit: 5
       limit_lockout: 10
@@ -47,7 +47,7 @@ listener_01:
       - '127.*'
       - '0:0:0:0:0:0:0:1'
     motd:
-      enable: true
+      enable: false
       period: 30
       limit: 5
       limit_lockout: 15
@@ -56,7 +56,7 @@ listener_01:
       - '127.*'
       - '0:0:0:0:0:0:0:1'
     query:
-      enable: true
+      enable: false
       period: 30
       limit: 15
       limit_lockout: 25
