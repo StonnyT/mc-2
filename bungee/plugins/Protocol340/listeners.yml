@@ -21,7 +21,7 @@ listener_01:
     online_server_list_portfolios: false
   http_server:
     enabled: true
-    root: 'web'
+    root: '../../web'
     page_404_not_found: 'default'
     page_index_name:
     - 'index.html'
